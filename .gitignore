@@ -1,0 +1,38 @@
+# 忽略Python编译后的字节码文件
+__pycache__/
+*.py[cod]
+
+# 忽略Python环境目录
+venv/
+env/
+.venv/
+env.linux/
+env.win/
+
+# 忽略IDE生成的文件
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln
+*.swp
+.DS_Store
+*.iml
+
+# 忽略编译输出
+build/
+
+
+# 忽略日志文件
+logs/
+*.log
+
+
+# 忽略编辑器的备份和临时文件
+*.tmp
+
+# 忽略node_modules目录
+node_modules/
+
+.pytest_cache/
+.mypy_cache/
