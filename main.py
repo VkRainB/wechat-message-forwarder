@@ -2,7 +2,7 @@ import json
 import time
 
 from flask import Flask
-from flask_sock import Sock
+from flask_sock import Sock,Server
 from get_msg import controls_to_msg_list
 
 app = Flask(__name__)
@@ -45,7 +45,7 @@ def index():
     return 'ok'
 
 @sock.route('/ws')
-def websocket_handler(ws):
+def websocket_handler(ws:Server):
     try:
         while ws.connected:
             try:
